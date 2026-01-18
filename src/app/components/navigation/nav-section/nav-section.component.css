@@ -1,0 +1,23 @@
+    .nav-section {
+      margin-bottom: 24px;
+    }
+
+    .nav-section-title {
+      padding: 8px 20px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+
+    .nav-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-item {
+      margin-bottom: 2px;
+    }

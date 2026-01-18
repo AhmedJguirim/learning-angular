@@ -1,0 +1,8 @@
+<a 
+    [routerLink]="item.route" 
+    routerLinkActive="active"
+    class="nav-link">
+    <span class="nav-icon" [ngClass]="'icon-' + item.icon"></span>
+    <span class="nav-text">{{ item.text }}</span>
+    <span class="badge" *ngIf="item.badge">{{ item.badge }}</span>
+</a>

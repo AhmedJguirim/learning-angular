@@ -1,0 +1,11 @@
+.sidenav {
+    width: 260px;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    overflow: hidden;
+    justify-content: space-between;
+}

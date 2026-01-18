@@ -323,7 +323,7 @@
     </div>
   </div>
 </main> -->
-<app-employees-list></app-employees-list>
+<!-- <app-employees-list></app-employees-list> -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
@@ -332,5 +332,9 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-<router-outlet />
+<div class="app-container">
+  <app-side-nav></app-side-nav>
+  <main class="main-content">
+    <router-outlet />
+  </main>
+</div>

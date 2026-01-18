@@ -1,1 +1,8 @@
-<p>employees-list works!</p>
+
+<h1>Employees List</h1>
+
+<ag-grid-angular
+        style="width: 100%; height: 500px;"
+        class="ag-theme-alpine"
+        [rowData]="this.employees"
+        [columnDefs]="this.colDef" />

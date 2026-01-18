@@ -1,0 +1,8 @@
+<div class="nav-section">
+    <div class="nav-section-title">{{ title }}</div>
+    <ul class="nav-menu">
+    <li class="nav-item" *ngFor="let item of items">
+        <app-nav-item [item]="item"></app-nav-item>
+    </li>
+    </ul>
+</div>

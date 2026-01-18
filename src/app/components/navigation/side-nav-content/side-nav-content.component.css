@@ -1,0 +1,5 @@
+.sidenav-content {
+    flex: 1;
+    padding: 16px 0;
+    overflow-y: auto;
+}
