@@ -13,11 +13,11 @@ import { Employee } from '../../../models/Employee.interface';
 })
 export class EmployeesListComponent {
   employees: Employee[] = [];
+  paginationPageSize = 5;
 
   constructor(private employeeService: EmployeeService) {}
 
   ngOnInit() {
-    console.log('EmployeesListComponent ngOnInit');
     this.employeeService.getEmployees().subscribe((employees) => {
       this.employees = employees;
       console.log(this.employees);
