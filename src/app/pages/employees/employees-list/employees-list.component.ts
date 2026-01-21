@@ -19,7 +19,7 @@ export class EmployeesListComponent {
 
   ngOnInit() {
     this.employeeService.getEmployees().subscribe((employees) => {
-      this.employees = employees;
+      this.employees = employees.data;
       console.log(this.employees);
     });
   }
