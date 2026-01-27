@@ -19,14 +19,14 @@ export class EmployeesListComponent {
 
   ngOnInit() {
     this.employeeService.getEmployees().subscribe((employees) => {
-      this.employees = employees.data;
-      console.log(this.employees);
+      this.employees = employees;
+      console.log(employees);
     });
   }
   colDef: ColDef[] = [
     {
       headerName: 'Name',
-      valueGetter: (params) => params.data.firstName + ' ' + params.data.lastName ,
+      valueGetter: (params) => params.data.first_name + ' ' + params.data.last_name ,
       sortable: true,
       filter: true,
       resizable: true,
@@ -40,7 +40,7 @@ export class EmployeesListComponent {
       resizable: true,
     },
     {
-      field: 'phoneNumber',
+      field: 'phone_number',
       headerName: 'Phone Number',
       sortable: true,
       filter: true,
@@ -49,6 +49,7 @@ export class EmployeesListComponent {
     {
       field: 'department',
       headerName: 'Department',
+      valueGetter: (params) => params.data.department.name,
       sortable: true,
       filter: true,
       resizable: true,
@@ -56,6 +57,7 @@ export class EmployeesListComponent {
     {
       field: 'jobTitle',
       headerName: 'Job Title',
+      valueGetter: (params) => params.data.position.name,
       sortable: true,
       filter: true,
       resizable: true,
@@ -63,6 +65,7 @@ export class EmployeesListComponent {
     {
       field: 'accessLevel',
       headerName: 'Access Level',
+      valueGetter: (params) => params.data.access_level.name,
       sortable: true,
       filter: true,
       resizable: true,
